@@ -2,7 +2,7 @@ import requests
 import json
 from time import sleep
 
-token = 'e7693367debfd0ffe0e12129983fc2ea25b476491d2574105862b841e61adc5d564fa8ee21ace2aa9b152'
+token = ''
 owner_id = input('Enter owner_id:')
 url = f"https://api.vk.com/method/photos.get?owner_id=-{owner_id}&offset={0}&album_id=wall&count={1000}&access_token={token}&rev=1&v={5.103}"
 r = requests.get(url)
