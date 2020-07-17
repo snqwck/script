@@ -3,7 +3,7 @@ import json
 from time import sleep
 
 token = ''
-owner_id = input('Enter owner_id:')
+owner_id = input('Enter groud_ip:')
 url = f"https://api.vk.com/method/photos.get?owner_id=-{owner_id}&offset={0}&album_id=wall&count={1000}&access_token={token}&rev=1&v={5.103}"
 r = requests.get(url)
 response_json = json.loads(r.text)
